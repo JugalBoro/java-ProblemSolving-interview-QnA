@@ -1,5 +1,7 @@
 Brute Force: We iteratively test each bit value while tracking the number of 1 seen so far.....since we care about 1s is even or odd , we can store the number modulo 2
-
+TC=O(n)    SC =(O1)
+	
+	
 short Parity(unsigned long x) {
   short result = 0;
   while(x) {
@@ -10,7 +12,7 @@ short Parity(unsigned long x) {
 }
 
 
-optimized approach:  Mapping numbers with the bit 
+optimized approach:  Mapping numbers with the bit  TC= O(1)    SC= O(1)
 
 We can use a map or an array of the number of bits to form a nibble (a nibble consists of 4 bits, so a 16 – length array would be required). Then, we can get the nibbles of a given number.
 
